@@ -4,7 +4,7 @@
             "install-id" : ["00"],
             "install-digest": {
                 "algorithm-id": "sha256",
-                "digest-bytes": "00112233445566778899aabbccddeeff0123456789abcdeffedcba9876543210"
+                "digest-bytes": "d37b9395c2baf168f977ce9ff9ec007d7270fc84cbf1549324bfc8dfc34333a9"
             },
             "install-size" : 34768,
             "uri": "https://fwserver.com/file1.bin",
