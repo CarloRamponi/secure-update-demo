@@ -4,10 +4,10 @@
             "install-id" : ["00"],
             "install-digest": {
                 "algorithm-id": "sha256",
-                "digest-bytes": "d37b9395c2baf168f977ce9ff9ec007d7270fc84cbf1549324bfc8dfc34333a9"
+                "digest-bytes": "6543fdc3a51dcbaea3ea580526d737478e0a5720397ac4fe9a839f6a1eee9d31"
             },
             "install-size" : 34768,
-            "uri": "https://fwserver.com/file1.bin",
+            "uri": "https://fwserver.com/file1_enc.bin",
             "vendor-id" : "fa6b4a53-d5ad-5fdf-be9d-e663e4d41ffe",
             "class-id" : "1492af14-2569-5e48-bf42-9b2d51f2ab45",
             "bootable" : true
