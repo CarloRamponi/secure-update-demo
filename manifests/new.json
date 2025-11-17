@@ -1,0 +1,31 @@
+{
+    "components" : [
+        {
+            "install-id" : ["00"],
+            "install-digest": {
+                "algorithm-id": "sha256",
+                "digest-bytes": "00112233445566778899aabbccddeeff0123456789abcdeffedcba9876543210"
+            },
+            "install-size" : 34768,
+            "uri": "http://example.com/file1.bin",
+            "vendor-id" : "fa6b4a53-d5ad-5fdf-be9d-e663e4d41ffe",
+            "class-id" : "1492af14-2569-5e48-bf42-9b2d51f2ab45",
+            "bootable" : true
+        }
+    ],
+    "certification-manifest": [
+        {
+            "property-id": "123e4567-e89b-12d3-a456-426655447770",
+            "language-id": "cpc",
+            "component-id": ["00"],
+            "proof-certificate": "H4sICC7/GmkAA21lbXBhcnQuc210AHWRzQqDMAyA73uKHNODoLVWhe2wy0DYZU8gxXU/zCloBR9/8bfdZD2UkuRLvlBstfHK+v4s4HLKz9mR7fCqi1I12rt1FfSADLLKUFi1rW7MDgBLbQDx3eVBHgCq6gq4P4APPaMHITwQsUhCKRLGGAHTmQBuAcFTkcqYp3Ilo1AmsZ8G3N+SoSWlv5yVjNfQL8ldySjZkNIlJ9TZELBuYF51XmCycabMc5ZSGmgd5lZGEWS1qHBU+mrsNoRtPvyXt0bu5nYut7WjHvtWJ5fRbryH5JDH4qGLl9cq+vkPylFsXSQCAAA=",
+            "locality-constraint": true,
+            "verification-servers": []
+        }
+    ],
+    "manifest-version": 1,
+    "manifest-sequence-number": 5,
+    "severable": true,
+    "manifest-description": "This is a (severable) description of the manifest.",
+    "software-bill-of-materials": "H4sICDsDFmkAA29wdGVlX2dvb2Quc2JvbQDVVV1v0zAUfd+vsCremPPVpk37RBkgkIBNrCAEQshxblaDE0e2s66g/Xdukqbb0m1VBewjT7GvfXxsn3P8e4/g13ti+Bwy1puQ3tzaYuK6fMmlyiE5c5Q+cZuyG6uM+s7QaZrOD6Py3n6DgKVXSmfMVhgHzeQXn9uqKYB/Am0ETsA6YqwroAWT78ssBl2VSp1PylIkkz4MR/4wGtH+OIzpwE9DyvpeSlkYjQOfDcfxaNyCnK6h/VVPBpYlzFY7+l331L1WZGAsy4pqpcALQur71Itm3ngSRhPff+p5E8/rEVJPOV9hcZUVuJvcGpz2dY12gdtgLwuoYFOhswXTsOK2rucsq+uHxezlS3J43K1f7KE3cALH69YTMFyLwq7GzHRpLCTEiASISomdA0Hg7iwpOOQGrjK/fgfdOVeObmOQSCoWz49f0IAeSFbi+GsHn2/0Xu351iEMZxZ0zuQHSEFDznej3l7CAmIjbPcO1sNKLVupG9T6ibDzMnbwnt3DI4qn6KrCAnxXZnNP55uQW7iccrOFB67/7ILDpMPBwdI1PK6e4rp1id8NApUi1kwvb9LnuxhVNXt7mz77GAHb9DnNiSogJ0aVmsM+KZS2LJb4B8wsiVUEJbNPNKBNsZuwPCGphDNRNXB5sqK5X1d0qwYiskJChmZk1Uqt8o+Op+RALwurTjQr5ksyPXrjdBnOmZnvJicmT6q9HL+e0iAc3nSLXOUWCdUnAzwdD1KeJoxxlsajcDSKhszz8a8fsaE/Cj2Ikyjkg9gLBmk4TNMoZv5g7KU86Udb7/lu7T0tGCY9rdLo0Zp7sVg4tgnLNprrJ63Q6gdwa1x8eRJq5T/xujCmBGo14z/xOds5fSrvURR/zQkpuTXe/aRQl8uuMUT+MoewbFXGK1PfEkW+40dOQBM4BakKim/6wBv4wZZweivimcrqwCDCEEZSJrRckuql1zBHe4hTDKdMJaVkuk6gNr8Iv4gZwTHHlPwp7EbW/GdjfszbwY/al80dOzlY99KVPAAjNsTcyxq8Dw9u0rhrF/7C+q326zv+FrNdB/Gf7fGlWvLROqM6sNoTD8AIGUsk6JrSvTjg0vo7Sn+vaZ/v/QFkgXYJ4w4AAA=="
+}
