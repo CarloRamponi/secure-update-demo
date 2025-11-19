@@ -1,0 +1,7 @@
+arm-trusted-firmware
+bl31-bl32.bin
+build
+buildroot
+optee_os
+optee_os_updated
+toolchains
