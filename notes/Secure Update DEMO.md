@@ -19,6 +19,7 @@ What follows is a description of our secure update infrastructure, implementing 
 | status-server     | 192.168.0.3 | Tracks consumer devices and notifies for updates |
 | SBOM-verifier     | 192.168.0.4 | Verifies the SBOM of the update                  |
 | firmware-consumer | 192.168.0.5 | The IoT device that will install the update      |
+In this DEMO, the SBOM verifier also acts as remote proof verifier.
 ##### Hosts file
 You can include the following in the `/etc/hosts` file on each device:
 
@@ -167,7 +168,28 @@ You will now need to edit all the Makefiles in which the following variables are
 After this, you should be able to cross-compile the suit parser with all its dependencies.
 You can either copy the binaries with `scp` if the device is live, or include them in the `overlay` folder and rebuild buildroot to generate a rootfs containing them.
 
+#### Deployment
+
+Once the device is up and running, a few more steps are needed in order to have everything we need in the consumer.
+Here is the final directory structure we are aiming to have:
+
+```bash
+/root/
+└ secure_update/
+  └ out/
+    └ proofs/ # empty directory that will be used to store proofs
+  └ keys/
+    └ rsa_public.pem # public key used for communication, the private one
+				     # should be in sbom-verifier and proof verifier
+  └ secure_update # cross-compiled executable from the consumer repo 
+└ ethos/ # take it "as-is" from the consumer repo
+  └ ...
+└ status-server/ # take it "as-is" from the infrastructure repo
+  └ ...
+  └ updater_client.py # client daemon to be executed
+```
+
+If you have a different structure, you might have to update some paths in the source files.
 # TODO
 
-- completare il programma di update
-
+- Organize and film the DEMO
