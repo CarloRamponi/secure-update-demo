@@ -188,15 +188,13 @@ We will cross compile SUIT-Parser:
 git clone https://github.com/crosscon/secure_update_consumer
 ```
 
-You will now need to edit all the Makefiles in which the following variables are overwritten, with the corresponding value:
-- `CC = /<path-to-optee>/OPTEE-RPI4/toolchains/aarch64/bin/aarch64-linux-gnu-gcc`
-- `AR = /<path-to-optee>/OPTEE-RPI4/toolchains/aarch64/bin/aarch64-linux-gnu-ar`
-- `LD = /<path-to-optee>/OPTEE-RPI4/toolchains/aarch64/bin/aarch64-linux-gnu-ld`
-- `CFLAGS = /<path-to-optee>/OPTEE-RPI4/buildroot/output/staging`
-- `LDFLAGS = /<path-to-optee>/OPTEE-RPI4/buildroot/output/staging`
+You can enable cross compilation by setting some environment variables before running `make`:
 
-After this, you should be able to cross-compile the suit parser with all its dependencies.
-You can either copy the binaries with `scp` if the device is live, or include them in the `overlay` folder and rebuild buildroot to generate a rootfs containing them.
+```bash
+CROSS_COMPILE_PREFIX=/path-to-->/OPTEE-RPI4/toolchains/aarch64/bin/aarch64-linux-gnu- CROSS_COMPILE_SYSROOT=/path-to-->/OPTEE-RPI4/buildroot/output/staging make
+```
+
+You can then either copy the binaries with `scp` if the device is live, or include them in the `overlay` folder and rebuild buildroot to generate a rootfs containing them.
 
 #### Deployment
 
